@@ -1,0 +1,49 @@
+/* 
+1) this is to make the button align to the right because I don't know how to do it without flexbox 
+2) without flexbox it would end up in the top right parent container in app.jsx, not above it
+*/
+.dropdown{
+    display: flex;
+    justify-content: flex-end;
+}
+/* this is for the dropdown to stay consistent with the width of the button*/
+.dropdownWidth{
+    /* do i need inline-block? */
+    position: relative;
+}
+
+/* simple button styling */
+.dropdownBtn{
+    padding: 5px;
+    background-color: hsl(34, 57%, 70%);
+    cursor: pointer;
+    transition: ease-in .2s;
+    border: none;
+    font-size: 1.2rem;
+
+}
+
+.dropdownContent{
+    position: absolute;
+    background-color: hsl(0, 0%, 65%);
+    overflow:auto;
+    word-wrap: break-word;
+    /* width 100% is so it takes up the whole container */
+    width: 100%;
+    /* top 100% is how far away from the top margin of the parent element this element will be */
+    top: 100%;
+
+}
+
+.dropdownContent a {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    font-size: 1.1em;
+}
+
+.dropdownBtn:hover{
+    background-color: hsl(34, 57%, 50%);
+    
+}

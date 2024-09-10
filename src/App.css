@@ -1,0 +1,14 @@
+/* 
+margin: 25px 50px;
+top and bottom margins are 25px
+right and left margins are 50px
+*/
+.classContainer{
+    /* position: relative; */
+    max-width: 90%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+

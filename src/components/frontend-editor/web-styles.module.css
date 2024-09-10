@@ -1,0 +1,50 @@
+
+.container{
+    display: flex;
+    height: 100vh;
+    column-gap: 1%;
+  } 
+  /* flex shorthand allows us to mainupulate the growth/shrink/initial length of the flex objects in a flex container */
+  .left, .right{
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: column;
+  }
+
+  .htmlcode, .csscode, .jscode{
+    padding: 10px;
+  }
+  
+  .textarea{
+    width: 100%;
+    /* height is related to the parent container  */
+    height: 30%;
+    background-color: hsl(210, 13%, 25%); 
+    color: white;
+    /* vertically horizontally */
+    padding: 12px 8px;
+    outline: none;
+    border: none;
+  }
+  
+  .label{
+    background-color:hsl(210, 13%, 20%);
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .labelI{
+    padding: 5px;
+  }
+  
+  .htmlsandbox, .csssandbox{
+    margin-bottom: 10px;
+  }
+  
+  /* flex shorthand allows us to mainupulate the growth/shrink/initial length of the flex objects in a flex container */
+  .iframe{
+    width: 100%;
+    flex: 1;
+    background-color: white;
+    border: none;
+  }
